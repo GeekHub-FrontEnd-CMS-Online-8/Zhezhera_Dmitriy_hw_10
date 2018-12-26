@@ -1,0 +1,108 @@
+.work {
+  &__main {
+    background: url("../img/bg-work.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 202px;
+    padding-bottom: 100px;
+  }
+  &__navigation-link:hover{
+    background-color: #a1ca6c;
+  }
+  &__portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #94b963;
+    border-bottom: 1px solid #94b963;
+    padding: 30px 0;
+    margin-top: 55px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase
+  }
+  &__filters{
+    list-style: none;
+    padding: 0;
+    flex-basis: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__filter{
+    border: 0;
+    min-width: 80px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 5px 10px;
+    transition: 700ms;
+    &:hover{
+      background-color: #f5c149;
+      border-radius: 5px;
+    }
+  }
+}
+
+.work-job{
+  border-radius: 5px;
+  flex-basis: 260px;
+  max-width: 260px;
+  margin: 20px 0;
+  position: relative;
+  background: #3d4d29;
+
+  &__img-wrap{
+    font-size: 0;
+  }
+
+  &:hover{
+    .work-job__img{
+      opacity: 0.5;
+    }
+    &:after{
+      position: absolute;
+      content: url("../img/jobs/2-layers.png");
+      top: 75px;
+      left: 105px;
+    }
+  }
+  &__img{
+    object-fit: cover;
+    width: 260px;
+    height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  &__title{
+    width: 100%;
+    color: #727272;
+    font-size: 14px;
+    line-height: 58px;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    &:before{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      top: -16px;
+      left: 50%;
+      margin-left: -18.5px;
+      border-style: solid;
+      border-width: 0 18.5px 19px 18.5px;
+      border-color: transparent transparent #eee transparent
+    }
+  }
+}

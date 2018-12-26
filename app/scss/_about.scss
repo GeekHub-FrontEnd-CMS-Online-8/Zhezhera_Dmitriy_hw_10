@@ -1,0 +1,114 @@
+.about{
+  &__main{
+    background: url("../img/bg-about.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 202px;
+  }
+  &__navigation-link:hover {
+    background-color: #91778e;
+  }
+  &__title{
+    padding-bottom: 34px;
+  }
+  &__meat{
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    background-color: #a1ca6c;
+    display: inline-block;
+    margin: 60px auto;
+    padding: 0 40px;
+    border-radius: 5px;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -14px;
+      left: 50%;
+      margin-left: -15px;
+      border-style: solid;
+      border-width: 15px 15px 0 15px;
+      border-color: #a1ca6c transparent transparent transparent;
+    }
+  }
+}
+
+.team-cards{
+
+}
+.team-card{
+  margin: 20px 0;
+  background-color: rgba(77,63,75, 0.5);
+  transition: 700ms;
+  padding: 40px 20px 20px;
+  &:hover{
+    transition: 700ms;
+    background-color: rgba(77,63,75, 0.8);
+    .team-card__img-wrap{
+      background: white url("../img/User-hover.png") no-repeat center;
+      border-color: #df5c64;
+    }
+    .team-card__name{
+      color: white;
+    }
+    .team-card__position{
+      color: #ff8973;
+    }
+  }
+
+  &__img-wrap{
+    width: 165px;
+    height: 165px;
+    border: 5px solid #7a6477;
+    border-radius: 50%;
+    background: white url("../img/User.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+  &__name{
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #c7b6c5;
+  }
+  &__position{
+    color: #a1ca6c;
+    line-height: 58px;
+  }
+
+  &__socials{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social{
+    &--facebook:hover{
+      background-color: #4f689e;
+    }
+    &--twitter:hover{
+      background-color: #74c7d5;
+    }
+    &--google:hover{
+      background-color: #df5c64;
+    }
+    &--linked:hover{
+      background-color: #3e61af;
+    }
+  }
+  &__social-link{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #a1859e;
+    margin: 10px;
+  }
+}

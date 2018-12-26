@@ -1,0 +1,45 @@
+@import "globals";
+@import "services";
+@import "about";
+@import "work";
+@import "contacts";
+
+.carousel {
+  &-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  &-indicators--update{
+    bottom: 90px !important;
+    li{
+      max-width: 20px !important;
+      height: 20px !important;
+      background-color: rgba(255,255,255, 0.5) !important; ;
+      border-radius: 50%;
+      margin: 0 20px !important;
+    }
+    li.active{
+      background-color: #74c7d5 !important; ;
+    }
+  }
+
+  &-control-prev-icon--update,
+  &-control-next-icon--update{
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  &-caption--update{
+    bottom: 50% !important;
+    margin-bottom: -70px !important;
+  }
+  &__my-message-wrap{
+   display: flex;
+    justify-content: space-around;
+  }
+  &__my-message {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
